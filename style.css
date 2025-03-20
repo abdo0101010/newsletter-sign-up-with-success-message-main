@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --background-color: hsl(235, 18%, 26%);
+    --secondary-color: hsl(0, 0%, 100%);
+    --button-primary: hsl(4, 100%, 67%);
+    --button-secondary: hsl(234, 29%, 20%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background:var(--background-color);
+}
+h1{
+    font-weight: 700;    
+}
+p{
+    font-weight: 400;
+}
+.con{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.signup-box{
+    background: var(--secondary-color);
+    width: 60%;
+    height: 650px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                border-radius: 20px;
+            }
+            button{
+                height: 40px;
+                border-radius: 20px;
+                background-color: var(--button-secondary);
+                color: var(--secondary-color);
+                font-size: 15px;
+
+            }
+        }
+    }
+.text .list ul li {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 5px;
+    p{
+        margin-left: 10px;
+    }
+
+}
+}
+.list .gmail input{
+    height: 30px;
+    padding: 10px;
+    
+}
+.mas{
+    color: red;
+font-size: 20px;
+display: none;
+}
+.visible{
+    display: inline-block;
+}
